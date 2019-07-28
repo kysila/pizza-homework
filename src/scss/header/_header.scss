@@ -1,0 +1,39 @@
+.header {
+  min-width: 320px;
+  &__navigation {
+    @include flex-between;
+    width: 100%;
+    height: 37px;
+    background-color: #373c3f;
+    font-family: 'Lato-bold', sans-serif;
+  }
+  &__menu-title {
+    margin-left: 19px;
+    font-size: 12px;
+    font-family: 'Montserrat-medium', sans-serif;
+    color: #ffffff;
+  }
+  &__btn {
+    width: 41px;
+    height: 100%;
+    background-color: #202529;
+    position: relative;
+  }
+  &__btn-line {
+    @include btn-line;
+    top: calc(50% - 1px);
+  }
+  &__btn-line::before {
+    content: '';
+    @include btn-line;
+    top: -5px;
+  }
+  &__btn-line::after {
+    content: '';
+    @include btn-line;
+    top: 5px;
+  }
+  &__menu-list {
+    display: none;
+  }
+}

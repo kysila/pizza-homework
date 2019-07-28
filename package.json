@@ -1,0 +1,29 @@
+{
+  "name": "pizza-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tyomakysil/pizza-homework.git"
+  },
+  "author": "Artem Kisel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tyomakysil/pizza-homework/issues"
+  },
+  "homepage": "https://github.com/tyomakysil/pizza-homework#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-image": "^5.1.0",
+    "gulp-sass": "^4.0.2"
+  }
+}

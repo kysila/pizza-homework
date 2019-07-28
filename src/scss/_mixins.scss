@@ -1,0 +1,14 @@
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin btn-line {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #ffffff;
+  position: absolute;
+  left: calc(50% - 10px);
+}

@@ -2,7 +2,7 @@
 .vscode/**/*
 *.xml
 *.iml
-/node-modules/**/*
 /src/**/*
+/node-modules/
 gulpfile.js
 package-lock.json

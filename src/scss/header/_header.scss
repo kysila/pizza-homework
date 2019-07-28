@@ -6,12 +6,14 @@
     height: 37px;
     background-color: #373c3f;
     font-family: 'Lato-bold', sans-serif;
+    position: relative;
   }
   &__menu-title {
     margin-left: 19px;
     font-size: 12px;
     font-family: 'Montserrat-medium', sans-serif;
     color: #ffffff;
+    line-height: 26px;
   }
   &__btn {
     width: 41px;
@@ -19,21 +21,90 @@
     background-color: #202529;
     position: relative;
   }
+
   &__btn-line {
     @include btn-line;
-    top: calc(50% - 1px);
+    transition: all 0.2s ease;
+    &--top {
+      top: 12px;
+    }
+    &--center {
+      top: calc(50% - 1px);
+    }
+    &--bottom {
+      top: 24px;
+    }
   }
-  &__btn-line::before {
-    content: '';
-    @include btn-line;
-    top: -5px;
-  }
-  &__btn-line::after {
-    content: '';
-    @include btn-line;
-    top: 5px;
-  }
+
   &__menu-list {
+    width: 182px;
+    height: 161px;
+    position: absolute;
+    top: 37px;
+    right: -182px;
     display: none;
+    transition: all 0.2s linear;
+
+    & li {
+      padding-left: 12px;
+      width: 100%;
+      height: 34px;
+      font-size: 12px;
+      font-family: 'Lato-regular', sans-serif;
+      color: #444444;
+      background-color: #fafafa;
+      border: 1px solid #f0f0f0;
+      text-align: left;
+      list-style: none;
+      line-height: 31px;
+      box-sizing: border-box;
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
   }
+  &__main {
+    padding-top: 14px;
+    padding-left: 20px;
+    width: 100%;
+    height: 173px;
+    background: url("../../img/header-bg.png") center center no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+  }
+  &__title {
+    margin-bottom: 9px;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Lato-bold', sans-serif;
+    line-height: 21px;
+  }
+  &__link {
+    color: #a6d6e0;
+    font-size: 14px;
+    font-family: 'Lato-bold', sans-serif;
+    text-decoration: none;
+  }
+}
+
+.active {
+  display: block;
+}
+
+.slide {
+  right: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.rotate-l {
+  transform: rotate(45deg);
+  @include rotate-line;
+}
+
+.rotate-r {
+  transform: rotate(-45deg);
+  @include rotate-line;
 }

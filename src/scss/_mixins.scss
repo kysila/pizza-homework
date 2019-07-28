@@ -12,3 +12,8 @@
   position: absolute;
   left: calc(50% - 10px);
 }
+
+@mixin rotate-line {
+  top: 18px;
+  left: 10px;
+}

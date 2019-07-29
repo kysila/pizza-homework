@@ -21,6 +21,9 @@
     background-color: #202529;
     position: relative;
   }
+  &__logo {
+    display: none;
+  }
 
   &__btn-line {
     @include btn-line;
@@ -58,6 +61,10 @@
       list-style: none;
       line-height: 31px;
       box-sizing: border-box;
+      & a {
+        color: #444444;
+        text-decoration: none;
+      }
       &:hover {
         background-color: #f5f5f5;
       }
@@ -68,7 +75,7 @@
     padding-left: 20px;
     width: 100%;
     height: 173px;
-    background: url("../../img/header-bg.png") center center no-repeat;
+    background: url("../../img/header-bg.png") $bg-prop;
     background-size: cover;
     box-sizing: border-box;
   }

@@ -13,9 +13,3 @@ btn.addEventListener('click', () => {
        menu.classList.toggle('slide')
    }, 200);
 });
-
-// btn.addEventListener('mouseout', () => {
-//    line.classList.remove('hide');
-//    topLine.classList.remove('rotate-l');
-//    bottomLine.classList.remove('rotate.r');
-// });

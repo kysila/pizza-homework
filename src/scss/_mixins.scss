@@ -13,9 +13,23 @@
   left: calc(50% - 10px);
 }
 
+@mixin btn-line-640 {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background: #ffffff;
+  position: absolute;
+  left: calc(50% - 20px);
+}
+
 @mixin rotate-line {
   top: 18px;
   left: 10px;
+}
+
+@mixin rotate-line-640 {
+  top: 36px;
+  left: 20px;
 }
 
 @mixin dish-icon {
@@ -24,4 +38,14 @@
   position: absolute;
   top: -7px;
   right: 0;
+}
+
+@mixin dish-icon-640 {
+  width: 60px;
+  height: 49px;
+}
+
+@mixin dish-icon-980 {
+  width: 60px;
+  height: 45px;
 }

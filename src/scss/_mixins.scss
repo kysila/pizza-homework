@@ -17,3 +17,11 @@
   top: 18px;
   left: 10px;
 }
+
+@mixin dish-icon {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: -7px;
+  right: 0;
+}

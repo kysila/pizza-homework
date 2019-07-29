@@ -24,7 +24,7 @@
 
   &__btn-line {
     @include btn-line;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
     &--top {
       top: 12px;
     }
@@ -96,7 +96,7 @@
 }
 
 .hide {
-  display: none;
+  opacity: 0;
 }
 
 .rotate-l {
